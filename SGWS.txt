@@ -1,0 +1,9 @@
+https://sgws-de--dedev1.cs20.my.salesforce.com/home/home.jsp
+
+https://sgws-de--detest.cs77.my.salesforce.com/home/home.jsp 
+
+Forgot#2017
+
+my user name for dedev1: venkata.reddy.sykam@accenture.com.dedev1 
+
+Username for detest: venkata.reddy.sykam@accenture.com.detest

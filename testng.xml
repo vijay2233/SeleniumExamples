@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Main Test Suite" parallel="tests" verbose="1">
+<!--     <test name="Grid IE Test">
+    <parameter name="browser" value="IE"/>
+        <classes>
+        <class name="com.test.ParallelTestA"/>
+        </classes>
+    </test> -->
+    <test name="Grid chrome Test">
+    <parameter name="browser" value="chrome"/>
+        <classes>
+        <class name="com.test.ParallelTestB"/>
+        </classes>
+    </test>
+<!-- 	<test name="Windows+IE9 Test">
+		<parameters>
+			<parameter name="platform" value="Windows" />
+			<parameter name="browser" value="Internet Explorer" />
+			<parameter name="version" value="11" />
+			<parameter name="url" value="http://google.com"/>
+		</parameters>
+		<classes>
+			<class name="SeGridTest" />
+		</classes>
+	</test> -->
+</suite>
