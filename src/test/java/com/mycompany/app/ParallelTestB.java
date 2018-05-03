@@ -15,7 +15,7 @@ import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 
-public class ParallelTestB  throws Exception{
+public class ParallelTestB {
 
 	public static RemoteWebDriver driver;
 	public static String appURL = "http://www.google.com";
@@ -29,7 +29,7 @@ public class ParallelTestB  throws Exception{
 	}
 	
 	@Test
-	public void testGooglePageTitleInChrome() {
+	public void testGooglePageTitleInChrome() throws Exception{
 		driver.navigate().to("http://localhost:8080/WebApp-1.0.0-SNAPSHOT/sample.html");
 		String strPageTitle = driver.getTitle();
 		this.takeSnapShot(driver, "WebAppsample.png") ;
@@ -37,7 +37,7 @@ public class ParallelTestB  throws Exception{
 	}
 	
 	@Test
-	public void testSearchGoogle() {
+	public void testSearchGoogle() throws Exception{
 		System.out.println("Opening Google..");
 		driver.navigate().to(appURL);
 		WebElement java = driver.findElement(By.name("q"));
