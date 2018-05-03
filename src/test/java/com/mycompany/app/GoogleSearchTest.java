@@ -21,7 +21,7 @@ public class GoogleSearchTest {
 		this.takeSnapShot(driver, "google.png") ;
 		System.out.println("Application title is :: "+appTitle);
 		Assert.assertTrue(appTitle.equalsIgnoreCase("Google"), "Page title does not match");
-		//driver.quit();
+		driver.quit();
 	}
 	public static void takeSnapShot(WebDriver webdriver,String fileWithPath) throws Exception{
 
