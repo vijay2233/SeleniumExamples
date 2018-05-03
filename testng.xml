@@ -14,13 +14,13 @@
 		</classes>
 	</test>
 	<test name="Grid chrome Test2">
-		<parameter name="browser" value="chrome"/>
+		<parameter name="browsera" value="chrome"/>
 		<classes>
 			<class name="com.pack.GoogleSearchTest"/>
 		</classes>
 	</test>
 	<test name="Grid chrome Test3">
-		<parameter name="browser" value="chrome"/>
+		<parameter name="browserb" value="chrome"/>
 		<classes>
 			<class name="javacodegeeks.seleniumHeadlessBrowser.TestingwBrowserversions"/>
 		</classes>
