@@ -20,7 +20,7 @@ public class GoogleSearchTest {
 		String appTitle = driver.getTitle();
 		this.takeSnapShot(driver, "google.png") ;
 		System.out.println("Application title is :: "+appTitle);
-		Assert.assertTrue(appTitle.equalsIgnoreCase("Googles"), "Page title does not match");
+		Assert.assertTrue(appTitle.equalsIgnoreCase("Google"), "Page title does not match");
 		//driver.quit();
 	}
 	public static void takeSnapShot(WebDriver webdriver,String fileWithPath) throws Exception{
