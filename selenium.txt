@@ -12,3 +12,14 @@ http://selenium-release.storage.googleapis.com/3.4/IEDriverServer_x64_3.4.0.zip
 https://chromedriver.storage.googleapis.com/2.38/chromedriver_win32.zip
 
 mvn archetype:generate -DgroupId=com.mycompany.app -DartifactId=WebDriverTest -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+
+Setup selenium grid:
+https://www.guru99.com/introduction-to-selenium-grid.html
+
+Examples:
+Grid example: http://www.seleniumeasy.com/selenium-tutorials/parallel-execution-in-selenium-grid
+
+Webdriver example: http://www.seleniumeasy.com/maven-tutorials/simple-example-program-using-webdriver-maven-java
+
+
+https://www.guru99.com/software-testing-introduction-importance.html 
