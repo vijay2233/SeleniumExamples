@@ -3,22 +3,15 @@ package javacodegeeks.seleniumHeadlessBrowser;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.htmlunit.HtmlUnitDriver;
-
 import com.gargoylesoftware.htmlunit.BrowserVersion;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 import org.testng.Assert;
-
 import java.io.File;
-
 import org.apache.commons.io.FileUtils;
-
 import org.openqa.selenium.OutputType;
-
 import org.openqa.selenium.TakesScreenshot;
-
 
 public class TestingwBrowserversions {
 
@@ -41,22 +34,14 @@ public class TestingwBrowserversions {
 	}
 	public static void takeSnapShot(WebDriver webdriver,String fileWithPath) throws Exception{
 
-        //Convert web driver object to TakeScreenshot
-
-        TakesScreenshot scrShot =((TakesScreenshot)webdriver);
-
-        //Call getScreenshotAs method to create image file
-
-                File SrcFile=scrShot.getScreenshotAs(OutputType.FILE);
-
-            //Move image file to new destination
-
-                File DestFile=new File(fileWithPath);
-
-                //Copy file at destination
-
-                FileUtils.copyFile(SrcFile, DestFile);
-
-    }
+		//Convert web driver object to TakeScreenshot
+		TakesScreenshot scrShot =((TakesScreenshot)webdriver);
+		//Call getScreenshotAs method to create image file
+		File SrcFile=scrShot.getScreenshotAs(OutputType.FILE);
+		//Move image file to new destination
+		File DestFile=new File(fileWithPath);
+		//Copy file at destination
+		FileUtils.copyFile(SrcFile, DestFile);
+    	}
 }
 
