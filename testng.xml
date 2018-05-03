@@ -7,12 +7,12 @@
         <class name="com.test.ParallelTestA"/>
         </classes>
     </test> -->
-    <test name="Grid chrome Test">
+<!--     <test name="Grid chrome Test">
     <parameter name="browser" value="chrome"/>
         <classes>
         <class name="com.test.ParallelTestB"/>
         </classes>
-    </test>
+    </test> -->
 <!-- 	<test name="Windows+IE9 Test">
 		<parameters>
 			<parameter name="platform" value="Windows" />
