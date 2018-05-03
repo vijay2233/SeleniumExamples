@@ -20,11 +20,12 @@ public class TestingwBrowserversions {
 		driver.navigate().to("http://google.com");
 		//driver.navigate().to("http://localhost:8080/WebApp-1.0.0-SNAPSHOT/sample.html");
 		String appTitle = driver.getTitle();
+		this.takeSnapShot(driver, "googlepaghe.png") ;
 		System.out.println("Application title is :: "+appTitle);
 		WebElement java = driver.findElement(By.name("q"));
 		java.sendKeys("Java Code Geeks");
 		java.submit();
-
+		this.takeSnapShot(driver, "googlesearch.png") ;
 		System.out.println("Title of the page now is " + driver.getTitle());
 
 		//driver.quit();
