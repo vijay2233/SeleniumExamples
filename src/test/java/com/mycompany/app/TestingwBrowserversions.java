@@ -30,7 +30,7 @@ public class TestingwBrowserversions {
 		this.takeSnapShot(driver, "googlesearch.png") ;
 		System.out.println("Title of the page now is " + driver.getTitle());
 
-		//driver.quit();
+		driver.quit();
 	}
 	public static void takeSnapShot(WebDriver webdriver,String fileWithPath) throws Exception{
 
