@@ -14,6 +14,7 @@ public class GoogleSearchTest {
 		driver.navigate().to("http://google.com");
 		//driver.navigate().to("http://localhost:8080/WebApp-1.0.0-SNAPSHOT/sample.html");
 		String appTitle = driver.getTitle();
+		this.takeSnapShot(driver, "google.png") ;
 		System.out.println("Application title is :: "+appTitle);
 		Assert.assertTrue(appTitle.equalsIgnoreCase("Googles"), "Page title does not match");
 		//driver.quit();
