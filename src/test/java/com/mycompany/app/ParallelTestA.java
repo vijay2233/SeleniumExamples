@@ -27,8 +27,8 @@ public class ParallelTestA {
 	public void testGooglePageTitleInIE() {
 		driver.navigate().to("http://www.google.com");
 		String strPageTitle = driver.getTitle();
-		System.out.println("Title-ParallelTestA"+strPageTitle);
-		Assert.assertTrue(strPageTitle.equalsIgnoreCase("Google"), "Page title doesn't match");
+		System.out.println("Title-ParallelTestA:"+strPageTitle);
+		Assert.assertTrue(strPageTitle.equalsIgnoreCase("WebDriver"), "Page title doesn't match");
 	}
 
 	@AfterClass
