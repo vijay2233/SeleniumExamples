@@ -23,7 +23,7 @@ import org.openqa.selenium.TakesScreenshot;
 public class TestingwBrowserversions {
 
 	@Test
-	public void testEasy() {
+	public void testEasy() throws Exception{
 		System.setProperty("webdriver.chrome.driver", "C://Users/venkata.reddy.sykam/selemium/nodes/chromedriver.exe");
 		WebDriver driver  = new ChromeDriver();
 		driver.navigate().to("http://google.com");
