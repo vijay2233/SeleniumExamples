@@ -15,7 +15,7 @@ import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 
-public class ParallelTestB {
+public class ParallelTestB  throws Exception{
 
 	public static RemoteWebDriver driver;
 	public static String appURL = "http://www.google.com";
