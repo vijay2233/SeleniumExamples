@@ -36,6 +36,7 @@ public class ParallelTestA {
 		if(driver!=null) {
 			System.out.println("Closing IE browser");
 			driver.quit();
+			driver.close();
 		}
 	}
 	
