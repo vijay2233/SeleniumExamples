@@ -10,6 +10,10 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import org.openqa.selenium.WebElement;
+import java.io.File;
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 
 public class ParallelTestB {
 
@@ -26,9 +30,10 @@ public class ParallelTestB {
 	
 	@Test
 	public void testGooglePageTitleInChrome() {
-		driver.navigate().to("http://www.google.com");
+		driver.navigate().to("http://localhost:8080/WebApp-1.0.0-SNAPSHOT/sample.html");
 		String strPageTitle = driver.getTitle();
-		Assert.assertTrue(strPageTitle.equalsIgnoreCase("Google"), "Page title doesn't match");
+		this.takeSnapShot(driver, "WebAppsample.png") ;
+		Assert.assertTrue(strPageTitle.equalsIgnoreCase("SamplePage"), "Page title doesn't match");
 	}
 	
 	@Test
@@ -38,6 +43,7 @@ public class ParallelTestB {
 		WebElement java = driver.findElement(By.name("q"));
 		java.sendKeys("Selenium Easy Grid Tutorials");
 		java.submit();
+		this.takeSnapShot(driver, "Gsearch-ParallelTestB.png") ;
 	}
 
 	@AfterClass
@@ -46,5 +52,16 @@ public class ParallelTestB {
 			System.out.println("Closing chrome browser");
 			driver.quit();
 		}
+	}
+	public static void takeSnapShot(WebDriver webdriver,String fileWithPath) throws Exception{
+
+		//Convert web driver object to TakeScreenshot
+		TakesScreenshot scrShot =((TakesScreenshot)webdriver);
+		//Call getScreenshotAs method to create image file
+		File SrcFile=scrShot.getScreenshotAs(OutputType.FILE);
+		//Move image file to new destination
+		File DestFile=new File(fileWithPath);
+		//Copy file at destination
+		FileUtils.copyFile(SrcFile, DestFile);
 	}
 }
