@@ -20,7 +20,7 @@ public class NewTest {
 		@BeforeTest
 		public void beforeTest() {
 			//NewTest nt = new NewTest();
-			System.setProperty("webdriver.chrome.driver", "C:/Users/vijay/selemium/nodes/chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "C:/Users/vijay/Desktop/selenium/nodes/chromedriver.exe");
 			//WebDriver driver = new ChromeDriver();
 		}
 		@AfterTest
